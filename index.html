@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Shahil! 🔥👑</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bdayMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="extras-container"></div>
+
+    <div class="container">
+        <div id="initialBtnContainer">
+            <div class="pre-loader">
+                <p>Something special is waiting for you, bro... ✨</p>
+            </div>
+            <button class="main-surprise-btn" onclick="revealEverything()">
+                Open Shahil's Special Day 🎁
+            </button>
+        </div>
+
+        <div id="mainContent" class="hidden">
+            <div class="glass-card">
+                <h1 class="main-title">Happy Birthday <br><span class="name">Shahil!</span> 👑</h1>
+                
+                <div class="profile-section">
+                    <div class="avatar-wrapper">
+                        <img src="shahil.jpg" alt="Shahil" class="profile-pic">
+                    </div>
+                    <div class="name-badge">Best Friend Forever! 🌟</div>
+                </div>
+
+                <div class="message-box">
+                    <p id="typewriter" class="wish-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
